@@ -7,6 +7,7 @@ chai.use(chaiHttp);
 describe("GET /", () => {
   it("should return Hello Express!", (done) => {
     chai
+
       .request(app)
       .get("/")
       .end((err, res) => {
